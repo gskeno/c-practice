@@ -32,8 +32,24 @@ void test2(){
     }
 }
 
+// 返回一个地址
+int *test4(){
+  int a = 10;
+	return &a; 
+}
+
+void test3(){
+  int* p = test4();
+  printf("p=%p\n", p);
+}
+
+
+
 int main(){
     // test1();
-    test2();
+     test2();
+    // test3();
+
+    printf("before return 0\n");
     return 0;
 }
