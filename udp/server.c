@@ -20,6 +20,7 @@ typedef struct
 typedef struct node_t
 {
     struct sockaddr_in caddr;
+    // 指针的基类型是node_t, *用来表示变量next是指针
     struct node_t *next; 
 } list;
  
