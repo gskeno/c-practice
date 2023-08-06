@@ -29,6 +29,10 @@ typedef struct node_t
 //创建头节点 
 list *list_create(void)
 {
+    // L=(SqList *)malloc(sizeof(SqList));
+    // L指的是SqList *的指针，指向名为SqList的结构体
+    // malloc(sizeof(SqList))指的是向系统内存申请大小为sizeof(SqList)的内存地址
+    // (SqList *)指的是把这个地址强制转化为SqlList *的指针
     list *p = (list *)malloc(sizeof(list));
     if (p == NULL)
     {
